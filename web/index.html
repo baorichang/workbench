@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的工作台</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <!-- 侧边导航 -->
+    <aside class="sidebar">
+      <div class="app-name">我的工作台</div>
+      <nav class="nav">
+        <a class="nav-item" href="#/home"     data-route="home">首页总览</a>
+        <a class="nav-item" href="#/plan"    data-route="plan">今日计划</a>
+        <a class="nav-item" href="#/media"   data-route="media">自媒体</a>
+        <a class="nav-item" href="#/dev"     data-route="dev">开发工作</a>
+        <a class="nav-item" href="#/consult" data-route="consult">咨询工作</a>
+        <a class="nav-item" href="#/fitness" data-route="fitness">健身计划</a>
+        <a class="nav-item" href="#/diet"    data-route="diet">饮食计划</a>
+        <a class="nav-item" href="#/games"   data-route="games">游戏娱乐</a>
+        <a class="nav-item" href="#/settings" data-route="settings">数据设置</a>
+      </nav>
+      <div class="sidebar-footer">数据保存在本电脑 · 本地运行 · 未连接网络</div>
+    </aside>
+
+    <!-- 主区域 -->
+    <div class="main">
+      <header class="topbar">
+        <div class="topbar-title" id="page-title">首页总览</div>
+        <div class="topbar-right">
+          <span id="today-date"></span>
+          <button class="btn btn-ghost" id="quick-memo-btn" type="button">快速备忘</button>
+        </div>
+      </header>
+      <main class="content" id="view"><!-- 视图由 js/app.js 渲染 --></main>
+    </div>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/components.js"></script>
+  <script src="/js/views/home.js"></script>
+  <script src="/js/views/plan.js"></script>
+  <script src="/js/views/media.js"></script>
+  <script src="/js/views/dev.js"></script>
+  <script src="/js/views/consult.js"></script>
+  <script src="/js/views/fitness.js"></script>
+  <script src="/js/views/diet.js"></script>
+  <script src="/js/views/games.js"></script>
+  <script src="/js/views/settings.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

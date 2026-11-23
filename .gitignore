@@ -1,0 +1,14 @@
+# 本地个人数据（仅保存在本机，不入库）
+data/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
